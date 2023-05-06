@@ -67,14 +67,14 @@ body {
   text-align: end;
 }
 .calculator .display-col {
-  min-height: 100px;
+  min-height: 50px;
   overflow: auto;
   background-color: #dbdbd5;
   border-radius: 0.4em;
 }
 .calculator .btn-col {
-  min-height: 50px;
-  padding: 0.4em 1em;
+  min-height: 40px;
+  padding: 0.4em 0.4em;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -84,16 +84,13 @@ body {
   display: block;
   border: none;
   border-radius: 1.5em;
-  font-size: 2em;
+  font-size: 1.5em;
   flex: 1 0 auto;
-  height: 2.5em;
+  height: 2em;
 }
 .calculator .btn-col button:active {
   border: 0.2em #2A363B solid;
   box-shadow: none;
-}
-.calculator .btn-col button.btn-wide {
-  width: 6em;
 }
 .calculator .btn-col .btn-color1 {
   background-color: #499e46;
