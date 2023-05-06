@@ -87,6 +87,7 @@ body {
   font-size: 1.5em;
   flex: 1 0 auto;
   height: 2em;
+  color: black;
 }
 .calculator .btn-col button:active {
   border: 0.2em #2A363B solid;
