@@ -1,0 +1,134 @@
+:root {
+    --color-light: #f5f5f5;
+    --color-medium: #21515e;
+    --color-pop: #FA991C;
+    --color-gray: #44494f;
+
+    --bs-dark-rgb: 42, 54, 59;
+}
+
+
+body {
+    font-family: helvetica, sans-serif;
+}
+
+
+
+.navbar-custom {
+
+    .navbar-brand {
+        font-size: 1.2;
+        span {    //Navbar logo accent
+            color: var(--color-pop);
+            font-weight: bold;
+        }
+    }
+
+}
+
+.hero {
+    .subhead {
+        color: var(--color-gray);
+        font-size: 1.4em;
+        margin-top: 2em;
+        margin-bottom: 0em;
+    }
+
+    h1 {
+        color: var(--color-medium);
+        font-weight: bold;
+        font-size: 3em;
+    }
+}
+
+.bottom-section {
+    min-height: 10em;
+
+    h1 {
+        text-transform: uppercase;
+        color: var(--color-light);
+        font-size: 2em;
+    }
+
+    textarea {
+        min-height: 200px;
+    }
+
+    iframe {
+        width: 100%;
+    }
+}
+
+.whole-page-height {
+    height: calc(100vh - 56px);
+}
+
+.calculator {
+    max-width: 400px;
+    border-radius: 1em;
+    background-color: #2A363B;
+
+    #display-1 {
+        display: block;
+        text-align: end;
+        height: 1.2em;
+        font-size: 2em;
+    }
+    #display-2 {
+        display: block;
+        height: 1.2em;
+        font-size: 3em;
+        text-align: end;
+    }
+
+    .display-col {
+        min-height: 100px;
+        overflow: auto;
+        background-color: #dbdbd5;
+        border-radius: .4em;
+    }
+
+    .btn-col {
+        min-height: 50px;
+        padding: .4em 1em;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-grow: 4;
+
+        button {
+            display: block;
+            border: none;
+            border-radius: 1.5em;
+            font-size: 2em;
+            flex: 1 0 auto;
+            height: 2.5em;
+
+            &:active {
+                border: .2em #2A363B solid;
+                box-shadow: none;
+            }
+
+        }
+
+        button.btn-wide {
+            width: 6em;
+        }
+
+        .btn-color1 {
+            background-color: #499e46;
+        }
+        .btn-color2 {
+            background-color: #b83143;
+        }
+        .btn-color3 {
+            background-color: #d9af5b;
+        }
+    }
+}
+
+button.active-button {
+    scale: 0.9;
+    box-shadow: 0 0 .4em #FF847C;
+    //color: white;
+}
