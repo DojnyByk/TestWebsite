@@ -20,6 +20,7 @@ body {
   justify-content: center;
   background-color: rgb(193, 193, 193);
   color: black;
+  font-size: 1.5rem;
 }
 
 .logo {
@@ -43,7 +44,7 @@ body {
   margin: 0.3em;
   border-radius: 0.5em;
   font-weight: 600;
-  max-width: 300px;
+  max-width: 320px;
   box-shadow: 0.2em 0.2em 0.1em var(--shadow);
 }
 
@@ -60,7 +61,7 @@ body {
   background-image: linear-gradient(to bottom, var(--calculator-color), transparent 0.08em), linear-gradient(to right, var(--calculator-color), transparent 0.08em), linear-gradient(to top, var(--calculator-color), transparent 0.08em), linear-gradient(to left, var(--calculator-color), transparent 0.08em), linear-gradient(to bottom, var(--shadow), transparent 0.35em), linear-gradient(to right, var(--shadow), transparent 0.35em), linear-gradient(to top, var(--light), transparent 0.35em), linear-gradient(to left, var(--light), transparent 0.35em);
 }
 .display .upper-display {
-  font-size: 0.9em;
+  font-size: 1.2rem;
   color: rgba(0, 0, 0, 0.75);
   word-wrap: break-word;
   margin-bottom: 0.5em;
@@ -68,7 +69,7 @@ body {
 }
 .display .lower-display {
   display: block;
-  font-size: 1.1em;
+  font-size: 1.6rem;
   word-wrap: break-word;
   bottom: 0;
 }
@@ -79,6 +80,8 @@ body {
   gap: 0.4em;
 }
 .keyboard button {
+  font-size: 1.3rem;
+  color: inherit;
   border: none;
   border-radius: 0.5em;
   background-color: var(--calculator-color);
@@ -91,5 +94,5 @@ body {
   box-shadow: 0 0 0.1em 0.05em var(--calculator-color), 0.08em 0.08em 0.08em var(--shadow), -0.08em -0.08em 0.08em var(--light);
 }
 .keyboard .btn-alt-color {
-  color: rgba(0, 0, 0, 0.637);
+  color: rgba(30, 43, 125, 0.947);
 }/*# sourceMappingURL=calculator-stylesheet.css.map */
