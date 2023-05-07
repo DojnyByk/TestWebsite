@@ -1,0 +1,95 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+:root {
+  --calculator-color: rgb(224, 225, 230);
+  --display-color: rgba(0, 0, 0, 0.03);
+  --shadow: rgba(0, 0, 0, .1);
+  --light: rgba(255, 255, 255, .8);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Montserrat, sans-serif;
+}
+
+body {
+  display: flex;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(193, 193, 193);
+  color: black;
+}
+
+.logo {
+  display: block;
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  text-decoration: none;
+  font-weight: bold;
+  color: white;
+  font-size: 1.1em;
+  text-shadow: 0 0 0.15em black;
+}
+.logo span {
+  color: #FA991C;
+}
+
+.container {
+  background-color: var(--calculator-color);
+  padding: 0.5em;
+  margin: 0.3em;
+  border-radius: 0.5em;
+  font-weight: 600;
+  max-width: 300px;
+  box-shadow: 0.2em 0.2em 0.1em var(--shadow);
+}
+
+.display {
+  display: flex;
+  background-color: var(--display-color);
+  border-radius: 0.3em;
+  flex-direction: column;
+  text-align: right;
+  margin-bottom: 0.3em;
+  padding: 0.4em 0.5em;
+  min-height: 3.7em;
+  justify-content: space-between;
+  background-image: linear-gradient(to bottom, var(--calculator-color), transparent 0.08em), linear-gradient(to right, var(--calculator-color), transparent 0.08em), linear-gradient(to top, var(--calculator-color), transparent 0.08em), linear-gradient(to left, var(--calculator-color), transparent 0.08em), linear-gradient(to bottom, var(--shadow), transparent 0.35em), linear-gradient(to right, var(--shadow), transparent 0.35em), linear-gradient(to top, var(--light), transparent 0.35em), linear-gradient(to left, var(--light), transparent 0.35em);
+}
+.display .upper-display {
+  font-size: 0.9em;
+  color: rgba(0, 0, 0, 0.75);
+  word-wrap: break-word;
+  margin-bottom: 0.5em;
+  top: 0;
+}
+.display .lower-display {
+  display: block;
+  font-size: 1.1em;
+  word-wrap: break-word;
+  bottom: 0;
+}
+
+.keyboard {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0.4em;
+}
+.keyboard button {
+  border: none;
+  border-radius: 0.5em;
+  background-color: var(--calculator-color);
+  padding: 0.5em;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 0 0.05em 0.05em var(--calculator-color), 0.15em 0.15em 0.1em var(--shadow), -0.15em -0.15em 0.1em var(--light);
+}
+.keyboard button:hover, .keyboard button:active {
+  box-shadow: 0 0 0.1em 0.05em var(--calculator-color), 0.08em 0.08em 0.08em var(--shadow), -0.08em -0.08em 0.08em var(--light);
+}
+.keyboard .btn-alt-color {
+  color: rgba(0, 0, 0, 0.637);
+}/*# sourceMappingURL=calculator-stylesheet.css.map */

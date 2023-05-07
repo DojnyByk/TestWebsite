@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+:root{
+    --calculator-color: rgb(224, 225, 230);
+    --display-color: rgba(0, 0, 0, 0.03);
+    --shadow: rgba(0, 0, 0, .1);
+    --light: rgba(255, 255, 255, .8);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Montserrat, sans-serif;
+}
+
+body {
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(193, 193, 193);
+    color: black
+}
+
+.logo {
+    display: block;
+    position: absolute;
+    top: 4px;
+    left: 4px;
+
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+    font-size: 1.1em;
+
+    text-shadow: 0 0  0.15em black;    
+    span {
+        color: #FA991C;
+    }
+
+}
+
+.container {
+    background-color: var(--calculator-color);
+    padding: .5em;
+    margin: .3em;
+    border-radius: .5em;
+    font-weight: 600;
+    max-width: 300px;
+    box-shadow: .2em .2em .1em var(--shadow);
+}
+
+.display {
+    display: flex;
+    background-color: var(--display-color);
+    border-radius: .3em;
+    flex-direction: column;
+    text-align: right;
+    margin-bottom: .3em;
+    padding: .4em .5em;
+    min-height: 3.7em;
+    justify-content: space-between;
+    background-image:
+        linear-gradient(to bottom, var(--calculator-color) , transparent .08em),
+        linear-gradient(to right, var(--calculator-color) , transparent .08em),
+        linear-gradient(to top, var(--calculator-color) , transparent .08em),
+        linear-gradient(to left, var(--calculator-color) , transparent .08em),
+        linear-gradient(to bottom, var(--shadow) , transparent .35em),
+        linear-gradient(to right, var(--shadow) , transparent .35em),
+        linear-gradient(to top, var(--light) , transparent .35em),
+        linear-gradient(to left, var(--light) , transparent .35em);
+    
+
+    .upper-display {
+        font-size: .9em;
+        color: rgba(0, 0, 0, 0.75);
+        word-wrap: break-word;
+        margin-bottom:.5em;
+        top: 0;
+    }
+
+    .lower-display {
+        display: block;
+        font-size: 1.1em;
+        word-wrap: break-word;
+    
+        bottom: 0;
+    }
+}
+
+.keyboard {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: .4em;
+
+    button {
+        border: none;
+        border-radius: .5em;
+        background-color: var(--calculator-color);
+        padding: .5em;
+        font-weight: 600;
+        cursor: pointer;
+        box-shadow: 
+            0 0 .05em .05em var(--calculator-color),
+            .15em .15em .1em var(--shadow),
+            -.15em -.15em .1em var(--light);
+
+        
+        
+        &:hover, &:active {
+            box-shadow:
+                0 0 .1em .05em var(--calculator-color),
+                .08em .08em .08em var(--shadow),
+                -.08em -.08em .08em var(--light);
+        }
+
+
+    }
+
+    .btn-alt-color {
+        color: rgba(0, 0, 0, 0.637);
+    }
+}
+
