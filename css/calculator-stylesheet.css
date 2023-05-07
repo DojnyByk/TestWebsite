@@ -44,7 +44,7 @@ body {
   margin: 0.3em;
   border-radius: 0.5em;
   font-weight: 600;
-  max-width: 320px;
+  max-width: 100%;
   box-shadow: 0.2em 0.2em 0.1em var(--shadow);
 }
 
@@ -61,7 +61,7 @@ body {
   background-image: linear-gradient(to bottom, var(--calculator-color), transparent 0.08em), linear-gradient(to right, var(--calculator-color), transparent 0.08em), linear-gradient(to top, var(--calculator-color), transparent 0.08em), linear-gradient(to left, var(--calculator-color), transparent 0.08em), linear-gradient(to bottom, var(--shadow), transparent 0.35em), linear-gradient(to right, var(--shadow), transparent 0.35em), linear-gradient(to top, var(--light), transparent 0.35em), linear-gradient(to left, var(--light), transparent 0.35em);
 }
 .display .upper-display {
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   color: rgba(0, 0, 0, 0.75);
   word-wrap: break-word;
   margin-bottom: 0.5em;
@@ -69,7 +69,7 @@ body {
 }
 .display .lower-display {
   display: block;
-  font-size: 1.6rem;
+  font-size: 2rem;
   word-wrap: break-word;
   bottom: 0;
 }
@@ -80,12 +80,12 @@ body {
   gap: 0.4em;
 }
 .keyboard button {
-  font-size: 1.3rem;
-  color: inherit;
+  font-size: 1.6rem;
+  color: black;
   border: none;
   border-radius: 0.5em;
   background-color: var(--calculator-color);
-  padding: 0.5em;
+  padding: 0.3em;
   font-weight: 600;
   cursor: pointer;
   box-shadow: 0 0 0.05em 0.05em var(--calculator-color), 0.15em 0.15em 0.1em var(--shadow), -0.15em -0.15em 0.1em var(--light);

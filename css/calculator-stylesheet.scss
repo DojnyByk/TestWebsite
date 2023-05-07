@@ -48,7 +48,7 @@ body {
     margin: .3em;
     border-radius: .5em;
     font-weight: 600;
-    max-width: 320px;
+    max-width: 100%;
     box-shadow: .2em .2em .1em var(--shadow);
 }
 
@@ -74,7 +74,7 @@ body {
     
 
     .upper-display {
-        font-size: 1.2rem;
+        font-size: 1.4rem;
         color: rgba(0, 0, 0, 0.75);
         word-wrap: break-word;
         margin-bottom:.5em;
@@ -83,7 +83,7 @@ body {
 
     .lower-display {
         display: block;
-        font-size: 1.6rem;
+        font-size: 2rem;
         word-wrap: break-word;
     
         bottom: 0;
@@ -96,12 +96,12 @@ body {
     gap: .4em;
 
     button {
-        font-size: 1.3rem;
-        color: inherit;
+        font-size: 1.6rem;
+        color: black;
         border: none;
         border-radius: .5em;
         background-color: var(--calculator-color);
-        padding: .5em;
+        padding: .3em;
         font-weight: 600;
         cursor: pointer;
         box-shadow: 
